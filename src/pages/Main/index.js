@@ -5,14 +5,11 @@ import api from '../../services/api';
 import { Container, Form, SubmitButton, List } from './styles';
 
 export default class Main extends Component {
-    constructor() {
-        super();
-        this.state = {
-            newRepo: '',
-            repositories: [],
-            isLoading: false,
-        };
-    }
+    state = {
+        newRepo: '',
+        repositories: [],
+        isLoading: false,
+    };
 
     //  carregar as infos se existir algum item
     componentDidMount() {
